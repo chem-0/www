@@ -114,7 +114,7 @@ export default function AdvancedSodiumWaterReaction() {
 
   return (
     <motion.div 
-      className="flex flex-col items-center justify-center min-h-96 bg-gradient-to-b from-blue-200 to-white from-30% to-100% p-8"
+      className="flex flex-col items-center rounded-xl justify-center min-h-96 bg-gradient-to-b from-blue-200 to-white from-30% to-100% p-8"
       animate={backgroundControls}
     >
       <h1 className="text-3xl font-bold mb-8 text-blue-800">Sodium-Water Reaction Simulator</h1>
