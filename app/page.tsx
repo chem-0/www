@@ -1,4 +1,5 @@
 import CTA from "@/components/landing/cta";
+import { FAQs } from "@/components/landing/faq";
 import Features from "@/components/landing/features";
 import Hero from "@/components/landing/hero";
 import Testimonials from "@/components/landing/testimonials";
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Testimonials />
+      <FAQs />
       <CTA />
     </main>
   );
