@@ -5,7 +5,7 @@ import AdvancedSodiumWaterReaction from "./landingGif";
 
 export default function Hero() {
   return (
-    <Scaffold className="!w-full max-w-none relative pt-36 bg-gradient-to-b from-blue-500 to-white from-30% to-100% text-white">
+    <Scaffold className="!w-full !max-w-none relative pt-36 bg-gradient-to-b from-blue-500 to-white from-30% to-100% text-white">
       <div className="mx-auto max-w-screen-md flex flex-col gap-2 lg:gap-4 items-center justify-center text-center">
         <span className="text-sm px-2 py-1 bg-white/10 border-white/15 border-2 rounded-full">Pioneering AI-Driven Lab Simulations</span>
         <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">AI-Powered 3D Virtual Labs for Pharmaceutical Education</h1>
