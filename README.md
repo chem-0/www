@@ -1,15 +1,16 @@
-# ClientLab Landing
+# ClientLab Web
 
-This repository contains the landing page for **ClientLab**, built to introduce the vision, mission, and future capabilities of the platform.
+This repository contains the **frontend interface** of the ClientLab platform.
 
-It highlights the evolution of ClientLab from a client infrastructure product to a 3D scientific simulation engine powering drug discovery, AI research, and reproducible experimentation.
+Built with **React + TypeScript + Vite**, it provides a fast, modular, and modern experience for users interacting with our scientific research and simulation systems.
 
 ---
 
 ## Tech Stack
 
-- **Framework:** Next.js
+- **Framework:** React
 - **Language:** TypeScript
+- **Build Tool:** Vite
 - **Package Manager:** [pnpm](https://pnpm.io/)
 
 ---
@@ -33,19 +34,23 @@ pnpm build
 
 Preview the production build:
 ```bash
-pnpm start
+pnpm preview
 ```
 
 ---
 
-## Purpose
+## Project Purpose
 
-This landing page introduces:
-- ClientLab’s mission to accelerate research
-- Upcoming 3D simulation engine
-- Use cases in scientific and AI-driven discovery
-- Contact and collaboration opportunities
+This frontend interfaces with the core of ClientLab’s system, including:
+- Experimental and simulation dashboards
+- Data visualization layers
+- Workflow and resource management for researchers
+- Real-time collaboration and analytics features
 
 ---
 
-> This is a public-facing interface meant to provide early insight into the ClientLab platform and attract scientific collaborators and innovation partners.
+## Notes
+
+This application is core to the future direction of ClientLab as it evolves into a 3D simulation and discovery engine. All modules are being developed with extensibility and scientific reproducibility in mind.
+
+> For backend APIs, refer to the core ClientLab services or connect to your internal simulation engine.
