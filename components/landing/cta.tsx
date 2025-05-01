@@ -1,6 +1,6 @@
 import { Atom } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { BackgroundGradient } from "./hero";
+import BackgroundGradient from "../commons/background-gradient";
 
 export default function Cta() {
   return (

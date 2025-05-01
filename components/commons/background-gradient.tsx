@@ -1,33 +1,8 @@
-import { Button } from "../ui/button";
+"use client";
+
 import { motion } from "motion/react";
 
-export default function Hero() {
-  return (
-    <div className="w-full z-10 h-dvh max-h-[1000px]  relative flex flex-col pt-[100px] items-center justify-center">
-      <div className="inset-0 bg-white/40 absolute z-20 backdrop-blur-2xl" />
-      <BackgroundGradient />
-      <h1 className="text-7xl z-30 relative font-semibold text-center tracking-tighter leading-[1.3]  mb-4">
-        Experience <span className="carbon cursor-pointer">C</span>
-        hemistry <br /> Like Never Before.
-      </h1>
-      <p className="text-lg z-30 relative mt-2 mb-8 text-center">
-        Building Al-Powered simulations Engine for chemical reactions to <br />
-        visualize, experiment, and innovate.
-      </p>
-
-      <Button
-        size={"lg"}
-        className="bg-client-lab-secondary border-none z-30 relative font-bold text-white hover:bg-client-lab-secondary/70 hover:text-white mb-36"
-        variant="outline"
-        asChild
-      >
-        <a href="https://form.typeform.com/to/rFg5lg5E" target="_blank">Contact Us</a>
-      </Button>
-    </div>
-  );
-}
-
-export const BackgroundGradient = ({ className }: { className?: string }) => {
+export default function BackgroundGradient ({ className }: { className?: string }) {
   return (
     <motion.svg
       className={`absolute max-w-[500px] opacity-80 scale-75 top-1/2 left-1/2 -translate-y-2/3 -translate-x-1/2 ${className}`}
@@ -44,7 +19,7 @@ export const BackgroundGradient = ({ className }: { className?: string }) => {
     >
       <defs>
         <radialGradient id="grad" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
-          <stop offset="0%" stop-color="#a896ff">
+          <stop offset="0%" stopColor="#a896ff">
             <animate
               attributeName="stop-color"
               values="#a896ff; #67e8f9; #a896ff"
@@ -52,7 +27,7 @@ export const BackgroundGradient = ({ className }: { className?: string }) => {
               repeatCount="indefinite"
             />
           </stop>
-          <stop offset="33%" stop-color="#9370db">
+          <stop offset="33%" stopColor="#9370db">
             <animate
               attributeName="stop-color"
               values="#9370db; #70D7F6; #9370db"
@@ -60,7 +35,7 @@ export const BackgroundGradient = ({ className }: { className?: string }) => {
               repeatCount="indefinite"
             />
           </stop>
-          <stop offset="66%" stop-color="#70D7F6">
+          <stop offset="66%" stopColor="#70D7F6">
             <animate
               attributeName="stop-color"
               values="#70D7F6; #9370db; #70D7F6"
@@ -68,7 +43,7 @@ export const BackgroundGradient = ({ className }: { className?: string }) => {
               repeatCount="indefinite"
             />
           </stop>
-          <stop offset="100%" stop-color="#67e8f9">
+          <stop offset="100%" stopColor="#67e8f9">
             <animate
               attributeName="stop-color"
               values="#67e8f9; #a896ff; #67e8f9"

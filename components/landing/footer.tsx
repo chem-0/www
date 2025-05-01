@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Github, Twitter, Linkedin, Instagram } from "lucide-react";
@@ -44,7 +44,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Features
@@ -52,7 +52,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Pricing
@@ -60,7 +60,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Testimonials
@@ -68,7 +68,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   FAQ
@@ -84,7 +84,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Documentation
@@ -92,7 +92,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Tutorials
@@ -100,7 +100,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Blog
@@ -108,7 +108,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Support
@@ -124,7 +124,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   About
@@ -132,7 +132,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Careers
@@ -140,7 +140,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Partners
@@ -148,7 +148,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Contact
@@ -164,7 +164,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Privacy
@@ -172,7 +172,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Terms
@@ -180,7 +180,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Cookies
@@ -188,7 +188,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Licenses

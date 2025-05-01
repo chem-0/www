@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import Link from "next/link";
 import { ClientLabIcon } from "../assets/client-lab-icon";
 
 export default function Navbar() {
@@ -38,7 +38,7 @@ export default function Navbar() {
           ))}
         </div>
         <div className="absolute -translate-x-1/2 left-1/2">
-          <Link to={"/"} className="flex items-center gap-2">
+          <Link href={"/"} className="flex items-center gap-2">
             <ClientLabIcon />
             <span className="text-2xl font-semibold">
               chem<span className="text-blue-500 ">0</span>
