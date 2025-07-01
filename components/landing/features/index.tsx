@@ -32,7 +32,7 @@ const data: FeatureSectionProps[] = [
 ];
 export default function Features() {
   return (
-    <section className="flex flex-col items-center justify-center">
+    <section id="features" className="flex flex-col items-center justify-center">
       <h3 className="mb-4 text-5xl font-semibold tracking-tight">
         Explore Molecular Possibilities
       </h3>

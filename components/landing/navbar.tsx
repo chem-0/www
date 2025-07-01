@@ -4,23 +4,24 @@ import { ClientLabIcon } from "../assets/client-lab-icon";
 export default function Navbar() {
   const linksLeft = [
     {
-      name: "Experiments",
-      url: "/dash",
+      name: "Features",
+      url: "#features",
     },
     {
-      name: "Resources",
-      url: "/resources",
+      name: "About",
+      url: "#about",
     },
   ];
 
   const linksRight = [
     {
-      name: "Community",
-      url: "/community",
+      name: "FAQ",
+      url: "#faq",
     },
     {
-      name: "Assistance",
-      url: "/help",
+      name: "Contact",
+      url: "https://cal.com/chem0/secret",
+      external: true,
     },
   ];
   return (
@@ -51,6 +52,8 @@ export default function Navbar() {
               key={link.name}
               className="font-semibold opacity-80 hover:opacity-100 transition-all"
               href={link.url}
+              target={link.external ? "_blank" : undefined}
+              rel={link.external ? "noopener noreferrer" : undefined}
             >
               {link.name}
             </a>

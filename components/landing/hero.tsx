@@ -21,7 +21,7 @@ export default function Hero() {
         variant="outline"
         asChild
       >
-        <a href="https://form.typeform.com/to/rFg5lg5E" target="_blank">Contact Us</a>
+        <a href="https://cal.com/chem0/secret" target="_blank">Book a Demo</a>
       </Button>
     </div>
   );

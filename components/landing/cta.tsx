@@ -19,8 +19,9 @@ export default function Cta() {
             variant={"outline"}
             size={"lg"}
             className="bg-black hover:bg-neutral-800 text-white hover:text-neutral-200"
+            asChild
           >
-            Contact us
+            <a href="https://cal.com/chem0/secret" target="_blank">Schedule a Call</a>
           </Button>
         </div>
       </div>
