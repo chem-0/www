@@ -32,16 +32,20 @@ const data: FeatureSectionProps[] = [
 ];
 export default function Features() {
   return (
-    <section id="features" className="flex flex-col items-center justify-center">
-      <h3 className="mb-4 text-5xl font-semibold tracking-tight">
-        Explore Molecular Possibilities
-      </h3>
-      <p className="mb-12 text-center text-neutral-700">
-        View molecular orbitals, vibrational modes UV-Visible absorbance, <br />
-        and reaction processes.
-      </p>
-      <div className="max-w-7xl">
-        {" "}
+    <section id="features" className="flex flex-col items-center justify-center px-6 py-20 md:py-28">
+      <div className="max-w-4xl mx-auto w-full">
+        <h3 className="text-[2.75rem] sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tight text-left md:text-center leading-[1.1]">
+          Explore Molecular
+          <br />
+          Possibilities
+        </h3>
+        <p className="mt-6 md:mt-8 text-base sm:text-xl text-neutral-600 text-left md:text-center">
+          View molecular orbitals, vibrational modes UV-Visible absorbance,
+          <br className="hidden md:block" /> and reaction processes.
+        </p>
+      </div>
+      
+      <div className="max-w-7xl mt-16 md:mt-24">
         {data.map((section) => (
           <FeatureSection
             key={section.title}

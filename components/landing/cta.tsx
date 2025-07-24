@@ -26,25 +26,25 @@ export default function Cta() {
         </div>
       </div>
 
-      <Atom className="absolute z-40 text-slate-300/40 w-24 h-24 md:w-32 md:h-32 top-10 left-10 animate-pulse" />
+      <Atom className="hidden md:block absolute z-40 text-slate-300/40 w-24 h-24 md:w-32 md:h-32 top-10 left-10 animate-pulse" />
       <Atom
-        className="absolute z-40 text-slate-400/50 w-16 h-16 md:w-20 md:h-20 bottom-10 right-32 animate-pulse"
+        className="hidden md:block absolute z-40 text-slate-400/50 w-16 h-16 md:w-20 md:h-20 bottom-10 right-32 animate-pulse"
         style={{ animationDuration: "4s" }}
       />
       <Atom
-        className="absolute z-40 text-slate-300/30 w-20 h-20 md:w-24 md:h-24 top-1/3 right-10 animate-pulse"
+        className="hidden md:block absolute z-40 text-slate-300/30 w-20 h-20 md:w-24 md:h-24 top-1/3 right-10 animate-pulse"
         style={{ animationDuration: "5s" }}
       />
       <Atom
-        className="absolute z-40 text-slate-400/20 w-28 h-28 md:w-36 md:h-36 bottom-1/3 left-32 animate-pulse"
+        className="hidden md:block absolute z-40 text-slate-400/20 w-28 h-28 md:w-36 md:h-36 bottom-1/3 left-32 animate-pulse"
         style={{ animationDuration: "6s" }}
       />
       <Atom
-        className="absolute z-40 text-slate-300/20 w-10 h-10 top-1/4 left-1/4 animate-pulse"
+        className="hidden md:block absolute z-40 text-slate-300/20 w-10 h-10 top-1/4 left-1/4 animate-pulse"
         style={{ animationDuration: "3s" }}
       />
       <Atom
-        className="absolute z-40 text-slate-400/30 w-12 h-12 bottom-1/4 right-1/4 animate-pulse"
+        className="hidden md:block absolute z-40 text-slate-400/30 w-12 h-12 bottom-1/4 right-1/4 animate-pulse"
         style={{ animationDuration: "7s" }}
       />
     </section>
