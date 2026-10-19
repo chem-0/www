@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import BackgroundGradient from "../commons/background-gradient";
 import { Button } from "../ui/button";
 
@@ -28,14 +30,9 @@ export default function Hero() {
           variant="outline"
           asChild
         >
-          <a 
-            href="https://cal.com/chem0/secret" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-12 py-6"
-          >
+          <Link href="/contact" className="px-12 py-6">
             Book a Demo
-          </a>
+          </Link>
         </Button>
       </div>
     </div>

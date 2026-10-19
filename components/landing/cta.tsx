@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Atom } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import BackgroundGradient from "../commons/background-gradient";
@@ -21,7 +22,7 @@ export default function Cta() {
             className="bg-black hover:bg-neutral-800 text-white hover:text-neutral-200"
             asChild
           >
-            <a href="https://cal.com/chem0/secret" target="_blank">Schedule a Call</a>
+            <Link href="/contact">Schedule a Call</Link>
           </Button>
         </div>
       </div>

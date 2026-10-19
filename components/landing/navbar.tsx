@@ -15,26 +15,26 @@ interface NavLink {
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Root-relative so the anchors still resolve from /contact.
   const linksLeft: NavLink[] = [
     {
       name: "Features",
-      url: "#features",
+      url: "/#features",
     },
     {
       name: "About",
-      url: "#about",
+      url: "/#about",
     },
   ];
 
   const linksRight: NavLink[] = [
     {
       name: "FAQ",
-      url: "#faq",
+      url: "/#faq",
     },
     {
       name: "Contact",
-      url: "https://cal.com/chem0/secret",
-      external: true,
+      url: "/contact",
     },
   ];
 
@@ -56,18 +56,18 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex text-base tracking-tighter items-center justify-center space-x-4">
           {linksLeft.map((link) => (
-            <a
+            <Link
               key={link.name}
               className="font-semibold opacity-80 hover:opacity-100 transition-all"
               href={link.url}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
         </div>
         <div className="hidden md:flex text-base tracking-tighter items-center justify-center space-x-4">
           {linksRight.map((link) => (
-            <a
+            <Link
               key={link.name}
               className="font-semibold opacity-80 hover:opacity-100 transition-all"
               href={link.url}
@@ -75,7 +75,7 @@ export default function Navbar() {
               rel={link.external ? "noopener noreferrer" : undefined}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -97,7 +97,7 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="absolute top-full left-0 right-0 bg-white/90 dark:bg-gray-950/90 backdrop-blur-xl p-4 flex flex-col space-y-4 md:hidden border-t">
             {allLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
                 className="font-semibold opacity-80 hover:opacity-100 transition-all"
                 href={link.url}
@@ -106,7 +106,7 @@ export default function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </div>
         )}
